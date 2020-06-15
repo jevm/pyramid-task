@@ -13,11 +13,16 @@ namespace OddEvenTriangleSum.Application
         public void Run()
         {
             var triangle = _worker.ProcessTriangle("data.txt");
-            var pathMemoryJoined = string.Join("-", triangle.FinalMemory);
+            
+            if (triangle.TriangleNodes.Length > 0)
+            {
+                var pathMemoryJoined = string.Join("-", triangle.FinalMemory);
 
-            Console.WriteLine("Maximum possible sum is: " + triangle.FinalSum);
-            Console.WriteLine("Maximum sum memory path is: " + pathMemoryJoined);
-            Console.ReadKey();
+                Console.WriteLine("Maximum possible sum is: " + triangle.FinalSum);
+                Console.WriteLine("Maximum sum memory path is: " + pathMemoryJoined);
+                Console.ReadKey();
+            }
+           
         }
     }
 }
