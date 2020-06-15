@@ -9,6 +9,6 @@ Features
 * Presents both sum and memory path
 
 Ideas for future extension
-* Add a dependency injection mechanism if application will get bigger
-* Add more unit tests
-* Add some user interface
+* Possibly revisit unit tests
+* Add some user-friendly interface
+
