@@ -20,7 +20,7 @@ namespace OddEvenTriangleSum.Application
         {
             var triangle = _reader.PopulateFromFile(fileName);
 
-            if (triangle.IsEmpty || triangle.TriangleNodes == null)
+            if (triangle.IsEmpty)
             {
                 Console.WriteLine("Nothing to process...");
             }
